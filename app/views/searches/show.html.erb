@@ -1,0 +1,8 @@
+<h3>ip address: <%= @json_response['ip_address'] %></h3>
+<h3>country name: <%= @json_response['country_name'] %></h3>
+<h3>country code: <%= @json_response['country_code'] %></h3>
+
+<div>
+  <h3>country flag:</h3>
+  <img class="image" border="0" style='width: 30rem' src=<%=@json_response['country_flag']%>>
+</div>

@@ -1,0 +1,34 @@
+<h1>Welcome to the web application!</h1>
+<div>
+  <div>
+    <h3>Search by IP address (type my_ip to use your local IP address)</h3>
+  </div>
+  <div>
+    <%= form_tag("/search", method: "post") do %>
+      <%= label_tag(:q, "IP Address:") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search") %>
+    <% end %>
+  </div>
+</div>
+
+<div>
+  <h3>Display list of users</h3>
+  <%= form_tag("/search/users", method: "post") do %>
+    <%= label_tag(:q, "") %>
+    <%= submit_tag("Show") %>
+  <% end %>
+</div>
+
+<div>
+  <div>
+    <h3>Search by user display name</h3>
+  </div>
+  <div>
+    <%= form_tag("/search/user", method: "post") do %>
+      <%= label_tag(:q, "User display name:") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search") %>
+    <% end %>
+  </div>
+</div>
