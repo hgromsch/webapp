@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This are the steps necessary to get the application up and running:
 
-Things you may want to cover:
+* Installing Ruby on Rails:
 
-* Ruby version
+  * First configure .gemrc document to skip the installation of Ruby documentation:
+    * $ echo "gem: --no-document" >> ~/.gemrc
+  
+  * Then install RoR version 6:
+    * $ gem install rails -v 6.0.3.2
+  
+  * Last  install yarn
 
-* System dependencies
+* Starting the 'webapp' project:
 
-* Configuration
+  * Inside the repository root location run this command
+    * bundle install
+  
+  * To start the server run:
+    * rails server
+  
+  * Finally to enter the website go to: https://127.0.0.1:8080 or https://localhost:8080
 
-* Database creation
+App version used to create the project:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Gem version: 3.0.3
+* Rails version: 6.0.3.2
+* Ruby: 2.6.3.p62
